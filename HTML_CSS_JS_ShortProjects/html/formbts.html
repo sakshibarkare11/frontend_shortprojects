@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+    
+        <!-- VERTICAL FORM -->
+        <!-- &nbsb SPACE -->
+        <h2>Vertical form</h2>
+            <form >
+                <div class="form-group">
+                    <label > Username: </label>
+                    <input type="email" placeholder="Enter email" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label > Password: </label>
+                    <input type="email" placeholder="Enter password" class="form-control"/>
+                </div>
+                <input type="button" value="Submit" class="btn btn-info"/>
+            </form>
+
+
+        <!--ENDED  -->
+
+        <br>
+
+        <!-- INLINE FORM -->
+
+        <h2>Inline Form</h2>
+        <form class="form-inline" >
+            <div class="form-group">
+                <label > Username: </label>
+                <input type="email" placeholder="Enter email" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <label > Password: </label>
+                <input type="email" placeholder="Enter password" class="form-control"/>
+            </div>
+            <input type="button" value="Submit" class="btn btn-info"/>
+        </form>
+        <!-- ENDED -->
+        <br>
+
+        <!-- HOrizontal form -->
+
+        <h2>Horizontal Form</h2>
+        <form class="form-horizontal" >
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label class="control-label" > Username: </label>
+                </div>
+                <div class="col-md-10">
+                    <input type="email" placeholder="Enter email" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label class="control-label"> Password: </label>
+                </div>
+                <div class="col-md-10">
+                    <input type="password" placeholder="Enter password" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div  class="col-md-offset-2 col-md-10">
+                    <input type="button" value="Submit" class="btn btn-info"/>
+                </div>
+            </div>
+            </form>
+
+    <!-- ENDED -->
+    <br>
+
+    <!-- HORIZONTAL FORM LAYOUT -->
+    <h2>Form with static content</h2>
+    <form class="form-horizontal" >
+        <div class="form-group">
+            <div class="col-md-2">
+                <label class="control-label" > Username: </label>
+            </div>
+            <div class="col-md-10">
+                <p class="form-control-static">Seedinfotech@gmail.com</p>
+                <!-- <input class="form-control form-control-static" type="email" value="sakshi.barkare@gmail.com" placeholder="Enter email"/> -->
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2">
+                <label class="control-label"> Password: </label>
+            </div>
+            <div class="col-md-10">
+                <input type="password" placeholder="Enter password" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div  class="col-md-offset-2 col-md-10">
+                <input type="button" value="Submit" class="btn btn-info"/>
+            </div>
+        </div>
+        </form>
+
+    <!-- ENDED -->
+
+    </div>
+    
+</body>
+</html>

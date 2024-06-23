@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        a = 3;
+        b = 8;
+        c = 10;
+        if (a < c && a > b) {
+            document.write("3<10 && 3>8 <br> TRUE")
+        }
+        else {
+            document.write("3<10 && 3>8 <br> FALSE")
+        }
+
+        document.write("<br> <br>")
+
+        if (a < c && b < c) {
+            document.write("3<10 && 8<10 <br> TRUE");
+        }
+        else {
+            document.write("3<10 && 8<0 <br> FALSE");
+        }
+
+        document.write("<br> <br>")
+
+        if (a > c && b < c) {
+            document.write("3>10 && 8<10 <br> TRUE");
+        }
+        else {
+            document.write("3>10 && 8<0 <br> FALSE");
+        }
+
+        //<<<<<<<<<<<OR OPERATORS>>>>>>>>>>
+
+        document.write("<br> <br>")
+
+        if (a < c || b < c) {
+            document.write("3<10 || 8<10 <br> TRUE");
+        }
+        else {
+            document.write("3<10 || 8<0 <br> FALSE");
+        }
+
+        document.write("<br> <br>")
+
+        if (a > c || b < c) {
+            document.write("3>10 || 8<10 <br> TRUE");
+        }
+        else {
+            document.write("3>10 || 8<0 <br> FALSE");
+        }
+
+        document.write("<br> <br>")
+
+        if (a > c || b > c) {
+            document.write("3>10 || 8>10 <br> TRUE");
+        }
+        else {
+            document.write("3>10 || 8>0 <br> FALSE");
+        }
+
+        document.write("<br> <br>")
+
+        if (a < c || b > c) {
+            document.write("3<10 || 8>10 <br> TRUE");
+        }
+        else {
+            document.write("3<10 || 8>0 <br> FALSE");
+        }
+
+        //<<<<<<<<<<<NOT OPERATOR >>>>>>>>>>>
+        document.write("<br> <br>")
+
+        if (!(a > c) && (b > c)) {
+            document.write("!(3>10 && 8>10) <br> TRUE");
+        }
+        else {
+            document.write("!(3>10 && 8>10) <br> FALSE");
+        }
+
+        document.write("<br> <br>")
+
+        if (!(a < c) && (b < c)) {
+            document.write("!(3<10 && 8<10) <br> TRUE");
+        }
+        else {
+            document.write("!(3<10 && 8<10) <br> FALSE");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("DEFAULT FUNCTION");
+        document.write("<br><br>")
+
+
+        function helloworld()
+        {
+            document.write("Hello World!  <br>");
+        }
+        helloworld();
+
+
+        document.write("<br><br>");
+        document.write("FUNCTION WITH PARAMETER");
+
+        function lets_multiply(a,b)
+        {
+           c=a*b;        
+           document.write(c);
+        }
+
+        document.write("<br><br>");
+        lets_multiply(2,9); 
+
+        document.write("<br><br>");
+        document.write("USING RETURN >> TO STORE VARIABLE OUTSIDE THE FUNCTION");
+
+        function lets_divide(a,b)
+        {
+           c=a/b;        
+           return C;
+        }
+
+        document.write("<br><br>");
+
+        lets_divide(2,2);
+        // ans=ans*2;
+        // document.write(ans);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var city = [];
+        // var msg="can't add";
+        function show()
+        {
+            var a;
+            a=document.getElementById("cities").value;
+            // city.push(a);
+            if (city.indexOf(a)==-1) 
+            {
+                city.push(a);
+            }
+            else
+            {
+                alert("City Already Exist in List!!");
+            }
+            document.getElementById("cities").value="";
+            display();
+        }
+
+        function display()
+        {
+            empty="";
+            for ( i = 0; i < city.length; i++) {
+                empty+="<li>"+city[i]+" "+"<input type='button' value= X onclick='Remove("+i+")'/>"+"</li>";
+            }
+            
+            document.getElementById("list").innerHTML=empty;
+        }
+        function Remove(p)
+        {
+            alert("are you sure?");
+            city.splice(p,1);
+            display();
+        }
+
+        // isUppercase(char ch);
+        // charAt()
+
+    </script>
+</head>
+<body>
+    Enter City : <input type="text" id="cities"><br><br>
+    <input type="button" value="submit" onclick="show()"><br><br>
+    <ul id="list"></ul>
+</body>
+</html>

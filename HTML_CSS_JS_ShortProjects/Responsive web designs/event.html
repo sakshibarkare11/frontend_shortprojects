@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <script type="text/javascript">
+        function myonfocus()
+        {
+            var p= document.getElementById("k1");
+            p.style.backgroundColor="yellow";
+        }
+        // function myonblur()
+        // {
+        //     var p= document.getElementById("k1");
+        //     p.style.backgroundColor="white";
+        // }
+        // function myonchange()
+        // {
+        //     var p= document.getElementById("k2");
+        //     p.style.backgroundColor="red";
+        // }
+        function myonsubmit()
+        {
+            var p= document.getElementById("k1");
+            p.style.backgroundColor="yellow";
+        }
+    </script>
+</head>
+<body>
+    <form action="myonfocus" onsubmit = "myonsubmit()">
+        <input id="k1" type="text" name = "name" placeholder="enter name" ><br>
+        <button>send</button>
+    </form>
+</body>
+</html>

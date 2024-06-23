@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark_lime_nightmode_light_dark</title>
+    <script type="text/javascript">
+        myonclick=()=>{
+            var mainbody=document.getElementById("mymainbody");
+            if(mainbody.style.backgroundColor=="white")
+            {
+                mainbody.style.backgroundColor="black";
+
+                var theme=document.getElementById("mytheme");
+                theme.textContent="PURPLE";
+
+                var text=document.getElementById("mytext");
+                text.style.color="orange";
+            }
+            else if(mainbody.style.backgroundColor=="black")
+            {
+                mainbody.style.backgroundColor="purple";
+
+                var theme=document.getElementById("mytheme");
+                theme.textContent="LIGHTBLUE";
+
+                var text=document.getElementById("mytext");
+                text.style.color="white";
+            }
+            else if(mainbody.style.backgroundColor=="purple")
+            {
+                mainbody.style.backgroundColor="lightblue";
+
+                var theme=document.getElementById("mytheme");
+                theme.textContent="DEFAULT";
+
+                var text=document.getElementById("mytext");
+                text.style.color="black";
+            }
+            else 
+            {
+                mainbody.style.backgroundColor="white";
+
+                var theme=document.getElementById("mytheme");
+                theme.textContent="DARK";
+
+                var text=document.getElementById("mytext");
+                text.style.color="black";
+            }
+            
+
+        }
+    </script>
+</head>
+<body id="mymainbody">
+    <h1 id="mytext" style="text-align: center;"> Hello Everyone!! <br> Welcome to Document Object Model in Javascript!!.</h1>
+    
+    <span style="text-align: center;">MODE: <a id="mytheme" href="#" style="text-align: center;" onclick="myonclick()">DARK</a></span>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container" style="margin-top: 20px;">
+        <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#mymodal" >Click Here</button>
+        <div id="mymodal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"></button>
+                        <h3 class="modal-title">New Bootstrap Modal 1</h3>
+                    </div>
+
+                     <div class="modal-body">
+                        <h4>Welcome to this new Modal!</h4>
+                    </div>
+
+                    <div class="modal-footer">
+                        <input type="button" value="close" class="btn btn-info" data-dismiss="modal">
+                    </div>
+                    
+
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
+                            Clickme <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="carousel.html">Menu1</a></li>
+                            <li><a href="panel.html">Menu2</a></li>
+                            <li><a href="enquiryform.html">Menu3</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

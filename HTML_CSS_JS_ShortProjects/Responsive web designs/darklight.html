@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS</title>
+    <script type="text/javascript">
+
+        myonclick=()=>{
+            var mainbody=document.getElementById("mymainbody");
+            if(mainbody.style.backgroundColor=="white")
+            {
+                mainbody.style.backgroundColor="black";
+
+                var theme=document.getElementById("mytheme");
+                theme.textContent="LIGHT";
+
+                var text=document.getElementById("mytext");
+                text.style.color="orange";
+            }
+            else
+            {
+                mainbody.style.backgroundColor="white";
+
+                var theme=document.getElementById("mytheme");
+                theme.textContent="DARK";
+
+                var text=document.getElementById("mytext");
+                text.style.color="black";
+            }
+
+        }
+    </script>
+</head>
+<body id="mymainbody">
+    <h1 id="mytext" style="text-align: center;"> Hello Everyone!! <br> Welcome to Document Object Model in Javascript!!.</h1>
+    
+    <span style="text-align: center;">MODE: <a id="mytheme" href="#" style="text-align: center;" onclick="myonclick()">DARK</a></span>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            var stud,i;
+            stud = [{"Rollno":01,'name':"Sakshi",'Marks': 90,'City':"Pune"},{"Rollno":02,'name':"Amruta",'Marks': 80,'City':"Jalgaon"}]
+            e="";
+            for ( i = 0; i < stud.length; i++) 
+            {
+                // e+="<li>"+stud[i]+"</li>" 
+                e+="<li>"+stud[i].Rollno+""+stud[i].name+""+stud[i].Marks+""+stud[i].City+""+"</li>";
+            }
+            document.write
+        }
+    </script>
+</head>
+<body onload="display()">
+        <ul id="list"></ul>
+
+</body>
+</html>
